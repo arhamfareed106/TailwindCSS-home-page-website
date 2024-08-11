@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <title>Landing Page</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 shadow-md">
+        <div class="container mx-auto flex items-center justify-between p-5">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-white">
+                MyLogo
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-white hover:text-yellow-300">Home</a>
+                <a href="#" class="text-white hover:text-yellow-300">About</a>
+                <a href="#" class="text-white hover:text-yellow-300">Services</a>
+                <a href="#" class="text-white hover:text-yellow-300">Contact</a>
+            </nav>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden">
+            <nav class="px-2 pt-2 pb-4 space-y-1">
+                <a href="#" class="block px-3 py-2 text-white bg-blue-700 hover:bg-yellow-300">Home</a>
+                <a href="#" class="block px-3 py-2 text-white bg-blue-700 hover:bg-yellow-300">About</a>
+                <a href="#" class="block px-3 py-2 text-white bg-blue-700 hover:bg-yellow-300">Services</a>
+                <a href="#" class="block px-3 py-2 text-white bg-blue-700 hover:bg-yellow-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+      <!-- Hero Section -->
+      <section class="bg-cover bg-center h-screen text-white" style="background-image: url('https://source.unsplash.com/random/1600x900')">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">Welcome to Our Website</h1>
+                <p class="text-lg md:text-2xl mb-8">Your success is our priority</p>
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <main class="container mx-auto p-6">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+        <p class="text-gray-600">This section contains more information about your services, products, or whatever you want to showcase after the hero section.</p>
+    </main>
+        
+     <!-- Information Section -->
+     <section class="py-12 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <!-- Section Title -->
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Features</h2>
+
+            <!-- Row-wise Cards Container -->
+            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <!-- Card 1 -->
+                <div class="flex flex-col md:flex-row bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-4 md:mb-0 md:mr-6 flex justify-center items-center">
+                        <!-- Small Image -->
+                        <img src="https://picsum.photos/200/300" alt="Feature One" class="w-12 h-12">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Feature One</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col md:flex-row bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-4 md:mb-0 md:mr-6 flex justify-center items-center">
+                        <!-- Small Image -->
+                        <img src="https://picsum.photos/200/300" alt="Feature Two" class="w-12 h-12">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Feature Two</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col md:flex-row bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-4 md:mb-0 md:mr-6 flex justify-center items-center">
+                        <!-- Small Image -->
+                        <img src="https://picsum.photos/200/300" alt="Feature Three" class="w-12 h-12">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Feature Three</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Services Section -->
+       <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Section Title -->
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Our Services</h2>
+
+            <!-- Row-wise Services Container -->
+            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <!-- Service 1 -->
+                <div class="flex flex-col md:flex-row bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full md:w-1/3">
+                    <div class="mb-4 md:mb-0 md:mr-6 flex justify-center items-center">
+                        <!-- Small Image -->
+                        <img src="https://picsum.photos/200/300" alt="Service One" class="w-12 h-12">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Service One</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="flex flex-col md:flex-row bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full md:w-1/3">
+                    <div class="mb-4 md:mb-0 md:mr-6 flex justify-center items-center">
+                        <!-- Small Image -->
+                        <img src="https://picsum.photos/200/300" alt="Service Two" class="w-12 h-12">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Service Two</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="flex flex-col md:flex-row bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full md:w-1/3">
+                    <div class="mb-4 md:mb-0 md:mr-6 flex justify-center items-center">
+                        <!-- Small Image -->
+                        <img src="https://picsum.photos/200/300" alt="Service Three" class="w-12 h-12">
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Service Three</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Section Title -->
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">About Us</h2>
+
+            <!-- About Content Container -->
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <!-- About Image -->
+                <div class="mb-6 md:mb-0 flex justify-center md:w-1/2">
+                    <img src="https://picsum.photos/200" alt="About Us" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+
+                <!-- About Text -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Who We Are</h3>
+                    <p class="text-gray-600 mb-4">We are a passionate team dedicated to delivering exceptional services and solutions. Our mission is to create innovative solutions that meet the needs of our clients and make a positive impact on the world.</p>
+                    <p class="text-gray-600 mb-4">With a focus on quality and customer satisfaction, we strive to exceed expectations and build long-lasting relationships with our clients. Learn more about our services and how we can help you achieve your goals.</p>
+
+                    <!-- Contact Details -->
+                    <div class="mt-8 space-y-6">
+                        <!-- Email Address -->
+                        <div class="flex items-center justify-center md:justify-start">
+                            <i class="fas fa-envelope text-gray-600 mr-3"></i>
+                            <a href="mailto:info@example.com" class="text-gray-800 hover:text-gray-600">info@example.com</a>
+                        </div>
+                        
+                        <!-- Location -->
+                        <div class="flex items-center justify-center md:justify-start">
+                            <i class="fas fa-map-marker-alt text-gray-600 mr-6"></i>
+                            <span class="text-gray-800">123 Main Street, City, Country</span>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                            <a href="#" class="text-gray-600 hover:text-gray-800">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">
+                                <i class="fab fa-twitter fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Testimonials Section -->
+ <section class="py-12 bg-gray-600 mb-9">
+    <div class="container mx-auto px-6">
+        <!-- Section Title -->
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">What Our Clients Say</h2>
+
+        <!-- Testimonials Container -->
+        <div class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
+            <!-- Testimonial 1 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <img src="https://picsum.photos/200" alt="Client One" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Client One</h3>
+                        <p class="text-gray-600">CEO, Company One</p>
+                    </div>
+                </div>
+                <p class="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla id dictum gravida, risus purus cursus elit."</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <img src="https://picsum.photos/200" alt="Client Two" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Client Two</h3>
+                        <p class="text-gray-600">Manager, Company Two</p>
+                    </div>
+                </div>
+                <p class="text-gray-600">"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <img src="https://picsum.photos/200" alt="Client Three" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Client Three</h3>
+                        <p class="text-gray-600">Founder, Company Three</p>
+                    </div>
+                </div>
+                <p class="text-gray-600">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Us Section -->
+    <section class="bg-white w-full max-w-4xl mx-4 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h2>
+
+        <div class="flex flex-col md:flex-row md:space-x-8">
+            <!-- Contact Form -->
+            <div class="md:w-1/2 bg-gray-100 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Get in Touch</h3>
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                        <div>
+                            <label for="name" class="block text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-black-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border border-gray-300 rounded-md resize-none" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-black py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="md:w-1/2 bg-gray-100 p-6 rounded-lg shadow-lg mt-8 md:mt-0">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-map-marker-alt text-gray-600 mr-3"></i>
+                    <span class="text-gray-800">123 Main Street, City, Country</span>
+                </div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-phone-alt text-gray-600 mr-3"></i>
+                    <a href="tel:+1234567890" class="text-blue-500 hover:underline">+1 (234) 567-890</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-gray-600 mr-3"></i>
+                    <a href="mailto:info@example.com" class="text-blue-500 hover:underline">info@example.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   <!-- Footer Section -->
+<footer class="bg-stone-900 text-black py-12 shadow-lg">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:justify-between">
+            <!-- Footer Contact Info -->
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>123 Main Street, City, Country</p>
+                <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i><a href="tel:+1234567890" class="hover:underline">+1 (234) 567-890</a></p>
+                <p><i class="fas fa-envelope mr-2"></i><a href="mailto:info@example.com" class="hover:underline">info@example.com</a></p>
+            </div>
+
+            <!-- Footer Navigation -->
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Services</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-400 hover:text-blue-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-blue-300 hover:text-blue-200"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-red-400 hover:text-red-300"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-pink-400 hover:text-pink-300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+</body>
+</html>
